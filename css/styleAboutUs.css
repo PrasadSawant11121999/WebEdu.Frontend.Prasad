@@ -1,0 +1,120 @@
+/* left column*/
+
+/*Heading*/
+#AboutUs{
+    font-size: 30px;
+    text-align: right;
+    text-shadow: 5px 5px 5px grey;
+    transition: margin-right 1s,font-size 1s,text-shadow 1s;
+}
+#AboutUs:hover{
+    margin-right: 10%;
+    font-size: 32px;
+    text-shadow: 10px 10px 10px 10px grey;
+}
+
+.AboutUs{
+    margin: 40px auto auto auto;
+    font-size: 55px;
+    text-shadow: 10px 10px 10px 10px grey;
+    
+}
+.AboutUs:hover{
+    font-size: 56px;
+}
+.content{
+    font-size: 19px;
+    color: grey;
+    font-weight: 400;
+    margin: 19px;
+    text-align: justify;
+}
+.btn1{
+    width: 50%;
+    border-color: black;
+    border-width: 1px;
+    height:10%;
+    border: none;
+    background-color: rgb(168, 166, 166);
+}
+.btn1:hover{
+    background-color: rgb(19, 177, 19);
+    color: white;
+    border: none;
+    font-weight: 400;
+}
+
+
+/*Link Button*/
+.a{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+/* Right column */
+.one{
+    position: absolute;
+    left: 1%;
+    top: 22%;
+    border-radius: 2px;
+    z-index: 1;
+}
+.two{
+    position: absolute;
+    left: 37%;
+    top: 45%;
+    border-radius: 2px;
+    z-index: 2;
+}
+.img{
+    box-shadow: 8px 8px 8px 8px grey;
+    width: 375px;
+    height: 220px;
+}
+.one:hover{
+    top:21%;
+    box-shadow: 15px 15px 15px 10px rgb(100, 100, 100);
+}
+.two:hover{
+    top:44%;
+    box-shadow: 15px 15px 15px 10px rgb(100, 100, 100);
+}
+
+/**/
+footer{
+    height: 60px;
+}
+.footer-para{
+    color: white;
+    text-align: end;
+}
+
+
+@media (min-width:100px) and (max-width:765px) {
+    .one{
+        position:inherit;
+        margin: 2% auto;
+        box-shadow: none;
+
+    } 
+    .two{ display: none;}  
+    .img{
+        position: relative;
+    } 
+}
+@media (min-width:767px) {
+    .two{
+        display: block;
+    }
+    .one{
+        position: absolute;
+    } 
+    .img{
+        position: absolute;
+    }
+    
+    
+}
